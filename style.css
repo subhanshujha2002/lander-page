@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#main{
+    background: url('./pexels-nao-triponez-792224.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.heading{
+    backdrop-filter: blur(15px);
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu{
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    padding-top: 0px;
+}
+
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 25px 0px 25px;
+    font-size: large;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+
+hr{
+    border: 0.1px solid rgba(188, 168, 168, 0.633);
+}
+
+.cta{
+    border: 1px solid rgb(90, 83, 83);
+    border-radius: 12px;
+    position: relative;
+    background-color: transparent;
+    /* z-index: 1; */
+}
+
+.cta::before{
+    content: '';
+    position: absolute;
+    background: rgb(199, 199, 215);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid rgb(0, 0, 0);
+    border-width: 0px;
+    border-radius: 12px;
+    transform: scaleX(0);
+    transform-origin: top;
+    transition: transform 200ms ease-in-out;
+}
+
+.cta:hover::before,
+.cta:focus::before{
+    transform: scaleX(1);
+    border-width: 0px;
+    border-color: #000;
+    z-index: -1;
+}
+
+
+.cta:hover{
+    color: #000;
+}
+
+
+.para{
+    font-size: 35px;
+    font-weight: 300;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.button-28 {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 20px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 125px;
+    will-change: transform;
+    position: absolute;
+    left: 5%;
+    top: 75%;
+    }
+    
+    .button-28:disabled {
+    pointer-events: none;
+    }
+    
+    .button-28:hover {
+    color: #000;
+    background-color: #fff;
+    box-shadow: rgba(143, 143, 143, 0.563) 0 8px 15px;
+    transform: translateY(-2px);
+    }
+    
+    .button-28:active {
+    box-shadow: none;
+    transform: translateY(0);
+    }
+
+    .cam{
+        position: absolute;
+        left: 58.5%;
+        top: 22.5%;
+        z-index: 1;
+        image-orientation: flip;
+    }
+
+    #about{
+        height: 100vh;
+        width: 100vw;
+        background: url('./Untitled\ design.jpg');
+        position: relative;
+        
+    }
+
+    .first{
+        background: rgb(148, 142, 137);
+        height: 80vh;
+        width: 40%;
+        position: absolute;
+        top: 70px;
+        left: 30%;
+
+        border-radius: 50px;
+        box-shadow: 5px 5px 20px #000;
+    }
+
+    .wave{
+        left: 0%;
+        position: absolute;
+        height: 500px;
+    }
+
+    #services{
+        background: url('./pqr.jpg');
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* justify-items: stretch; */
+        justify-content: space-evenly;
+        align-items: center;
+        column-gap: 50px;
+    }
+
+    .g1, .g2, .g3{
+        background: rgb(71, 61, 61);
+        height: 70vh;
+        margin: auto 50px auto 50px;
+        border-radius: 50px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    #review{
+        background: url(./Untitled\ design.jpg);
+        height: 100vh;
+        width: 100vw;
+    }
+    .slideshow-container {
+        max-width: 800px;
+        position: relative;
+        margin: auto;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    .caption {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+    .dots {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .review{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .xyz{
+        background: #717171;
+    }
+
+    .contact-us{
+        height: 100vh;
+        width: 100vw;
+        background: rgb(148, 142, 137);
+    }
+
+    .contact-us{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:  center;
+        background-attachment: fixed;
+    }
+
+    .cont{
+        width: 420px;
+        background: transparent;
+        box-shadow: 0 0 10px rgba(0,0,0,.5);
+        color: #fff;
+        border-radius: 10px;
+        padding: 30px 40px;
+        border: 2px solid rgba(255,255,255,0.2);
+        backdrop-filter: blur(5px);
+    }
+
+    h1{
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    .username input, .password input{
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        outline: none;
+        border: none;
+        border: 2px solid rgba(255,255,255,0.2);
+        border-radius: 40px;
+        color: #fff;
+        font-size: 16px;
+        padding: 20px 45px 20px 20px;
+    }
+
+    .cont .username, .cont .password{
+        height: 50px;
+        width: 100%;
+        margin: 30px 0;
+        position: relative;
+    }
+
+    .username input::placeholder, .password input::placeholder{
+        color: #fff;
+    }
+
+    .username i, .password i{
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+    }
+
+    .cont .check{
+        display: flex;
+        justify-content: space-between;
+        font-size: 14.5px;
+        margin: -15px 0 15px;
+    }
+
+    .check label input{
+        accent-color: #fff;
+        margin-right: 3px;
+    }
+
+    .check a{
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .check a:hover{
+        text-decoration: underline;
+    }
+    
+    .cont .btn{
+        width: 100%;
+        height: 45px;
+        background: #fff;
+        outline: none;
+        border: none;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgba(0,0,0,.2);
+        cursor: pointer;
+        font-size: 16px;
+        color: #333;
+        font-weight: 600;
+    }
+
+    .reg{
+        font-size: 14.5px;
+        text-align: center;
+        margin: 20px 0 15px;
+    }
+    
+    .reg a{
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    
+    .reg a:hover{
+        text-decoration: underline;
+    }
+    
+    #login{
+        background: url('./852.jpg');
+    }
+
+    .ab{
+        text-align: center;
+        margin: 40px 20px 0px 20px;
+        font-size: 15px;
+        /* font-style: italic; */
+        font-weight: 600;
+    }
